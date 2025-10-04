@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Btssio</name>
+    </assembly>
+    <members>
+        <member name="P:Btssio.Musique.Album.id">
+            <summary>
+            Obtient l'identifiant de l'Album.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.title">
+            <summary>
+            Obtient le titre de l'Album.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.link">
+            <summary>
+            Obtient le lien Deezer de l'Album
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.cover">
+            <summary>
+            Obtient l'image de la pochette de l'Album
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.label">
+            <summary>
+            Obtient le label de l'Album
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.duration">
+            <summary>
+            Obtient la durée de l'Album
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.nbFans">
+            <summary>
+            Obtient le nombre de fans de l'Album.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.releaseDate">
+            <summary>
+            Obtient la date de sortie de l'Album.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.theArtist">
+            <summary>
+            Obtient l'Artiste de l'album
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Album.lesTracks">
+            <summary>
+            Obtient la liste des morceaux de l'Album
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Album.#ctor">
+            <summary>
+            Initialise une nouvelle instance par défaut de la classe Album.
+            Les propriétés de l'album ne peuvent pas être modifiées par la suite.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Album.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initialise une nouvelle instance de la classe Album.
+            </summary>
+            <param name="id">Identifiant de l'album.</param>
+            <param name="title">Nom de l'album.</param>
+            <param name="cover">Url de l'image de l'album.</param>
+        </member>
+        <member name="M:Btssio.Musique.Album.#ctor(System.String,System.String,System.String,Btssio.Musique.Artist)">
+            <summary>
+            Initialise une nouvelle instance de la classe Album.
+            </summary>
+            <param name="id">Identifiant de l'album.</param>
+            <param name="title">Nom de l'album.</param>
+            <param name="cover">Url de l'image de l'album.</param>
+            <param name="theArtist">Artiste de l'album.</param>
+        </member>
+        <member name="M:Btssio.Musique.Album.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32,System.DateTime,Btssio.Musique.Artist)">
+            <summary>
+            Initialise une nouvelle instance de la classe Album.
+            </summary>
+            <param name="id">Identifiant de l'album.</param>
+            <param name="title">Nom de l'album.</param>
+            <param name="link">Lien deezer de l'album</param>
+            <param name="cover">Pochette de l'album</param>
+            <param name="label">Label de l'album</param>
+            <param name="duration">Durée de l'album</param>
+            <param name="releaseDate">Date de sortie de l'album</param>
+            <param name="theArtist">Artiste de l'album</param>
+        </member>
+        <member name="M:Btssio.Musique.Album.addTrack(Btssio.Musique.Track)">
+            <summary>
+            Ajoute un morceau à la liste des morceaux de l'album.
+            </summary>
+            <param name="unTrack">Morceau à ajouter.</param>
+        </member>
+        <member name="M:Btssio.Musique.Album.getLesTracks">
+            <summary>
+            Obtient la liste des morceaux de l'album.  Null si la liste n'est pas connue.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Album.ToString">
+            <summary>
+            Obtient le nom et l'identifiant de l'album.
+            </summary>
+            <returns>Nom suivi de l'identifiant.</returns>
+        </member>
+        <member name="F:Btssio.Musique.Artist._id">
+            <summary>
+            Identifiant de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._name">
+            <summary>
+            Nom de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._link">
+            <summary>
+            Lien de la page deezer de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._picture">
+            <summary>
+            Lien de l'image de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._nbAlbums">
+            <summary>
+            Nombre d'albums de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._nbFans">
+            <summary>
+            Nombre de fans de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._lesAlbums">
+            <summary>
+            Liste des albums de l'artiste.
+            </summary>
+        </member>
+        <member name="F:Btssio.Musique.Artist._relatedArtists">
+            <summary>
+            Liste des artistes en relation avec l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.id">
+            <summary>
+            Identifiant de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.name">
+            <summary>
+            Nom de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.link">
+            <summary>
+            Lien de la page deezer de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.picture">
+            <summary>
+            Lien de l'image de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.nbAlbums">
+            <summary>
+            Nombre d'albums de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.nbFans">
+            <summary>
+            Nombre de fans de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.lesAlbums">
+            <summary>
+            Liste des albums de l'artiste.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Artist.relatedArtists">
+            <summary>
+            Liste des artistes en relation avec l'artiste.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Artist.#ctor">
+            <summary>
+            Initialise une nouvelle instance par défaut de la classe Artist.
+            Les propriétés de l'artiste ne peuvent pas être modifiées par la suite.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Artist.#ctor(System.String,System.String)">
+            <summary>
+            Initialise une nouvelle instance de la classe Artist.
+            </summary>
+            <param name="id">Identifiant de l'artiste</param>
+            <param name="name">Nom de l'artiste</param>
+        </member>
+        <member name="M:Btssio.Musique.Artist.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initialise une nouvelle instance de la classe Artist.
+            </summary>
+            <param name="id">Identifiant de l'artiste</param>
+            <param name="name">Nom de l'artiste</param>
+            <param name="link">Lien de détail de l'artiste.</param>
+            <param name="picture">Lien de l'image de l'artiste</param>
+        </member>
+        <member name="M:Btssio.Musique.Artist.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Initialise une nouvelle instance de la classe Artist.
+            </summary>
+            <param name="id">Identifiant de l'artiste.</param>
+            <param name="name">Nom de l'artiste.</param>
+            <param name="link">Uri de détail de l'artiste.</param>
+            <param name="picture">Uri d'une photo de l'artiste.</param>
+            <param name="nbAlbums">Nombre d'albums de l'artiste.</param>
+            <param name="nbFans">Nombre de fans de l'artiste.</param>
+        </member>
+        <member name="M:Btssio.Musique.Artist.addAlbum(Btssio.Musique.Album)">
+            <summary>
+            Ajoute un album à la liste des albums de l'artiste.
+            </summary>
+            <param name="unAlbum">Album à ajouter à la liste.</param>
+        </member>
+        <member name="M:Btssio.Musique.Artist.addRelatedArtists(Btssio.Musique.Artist)">
+            <summary>
+            Ajoute un artiste en relation à la liste des artiste en relation de l'artiste.
+            </summary>
+            <param name="unArtist">Album à ajouter à la liste.</param>
+        </member>
+        <member name="M:Btssio.Musique.Artist.getLesAlbums">
+            <summary>
+            Obtient une copie de la liste des albums de l'artiste.  Null si la liste des albums n'est pas connue.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Artist.getRelatedArtists">
+            <summary>
+            Obtient une copie de la liste des artistes similaires à l'artiste. Null si la liste des artistes similaires n'est pas connue.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Artist.ToString">
+            <summary>
+            Obtient le nom de l'artiste.
+            </summary>
+            <returns>Nom de l'artiste.</returns>
+        </member>
+        <member name="P:Btssio.Musique.Track.id">
+            <summary>
+            Obtient l'identifiant du morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.title">
+            <summary>
+            Obtient le titre du morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.theAlbum">
+            <summary>
+            Obtient l'Album du morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.link">
+            <summary>
+            Obtient le lien Deezer vers le morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.duration">
+            <summary>
+            Obtient la durée du morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.preview">
+            <summary>
+            Obtient un extrait de 30 secondes du morceau.
+            </summary>
+        </member>
+        <member name="P:Btssio.Musique.Track.theArtist">
+            <summary>
+            Obtient l'Artiste du morceau.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Track.#ctor">
+            <summary>
+            Initialise une nouvelle instance par défaut de la classe Track.
+            Les propriétés du morceau ne peuvent pas être modifiées par la suite.
+            </summary>
+        </member>
+        <member name="M:Btssio.Musique.Track.#ctor(System.String,System.String,System.String,System.Int32,System.String,Btssio.Musique.Artist,Btssio.Musique.Album)">
+            <summary>
+            Initialise une nouvelle instance de la classe Track.
+            </summary>
+            <param name="id">Identifiant du morceau.</param>
+            <param name="title">Nom du morceau.</param>
+            <param name="link">Uri vers un détail du morceau.</param>
+            <param name="duration">Durée du morceau.</param>
+            <param name="preview">Uri vers un extrait du morceau.</param>
+            <param name="theArtist">Artiste du morceau.</param>
+            <param name="theAlbum">Album du morceau.</param>
+        </member>
+        <member name="M:Btssio.Musique.Track.ToString">
+            <summary>
+            Obtient le nom de l'artiste.
+            </summary>
+            <returns>Nom de l'artiste.</returns>
+        </member>
+        <member name="T:Btssio.Deezer.DeezerUrls">
+            <summary>
+            Classe exposant un ensemble d'URL utilisées par le site Deezer.
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlSearchArtists">
+            <summary>
+            Obtenir les artistes contenant un nom précis
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlSearchAlbums">
+            <summary>
+            Obtenir les albums contenant un nom précis
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlSearchTracks">
+            <summary>
+            Obtenir les morceaux contenant un nom précis
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlDetailsArtist">
+            <summary>
+            Obtenir un artiste à partir de son identifiant
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlRelatedArtists">
+            <summary>
+            Obtenir les artistes liés à un artiste identifié
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlDetailsAlbumsArtist">
+            <summary>
+            Obtenir les albums d'un artiste identifié
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlDetailsAlbum">
+            <summary>
+            Obtenir un album identifié et ses morceaux
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerUrls.urlDetailsTracksAlbum">
+            <summary>
+            Obtenir les morceaux d'un album identifié
+            </summary>
+        </member>
+        <member name="T:Btssio.Deezer.DeezerPlugin">
+            <summary>
+            Classe d'accès aux plugins "Deezer Music Plugins".
+            Nécessite une connexion Internet active.
+            </summary>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerPlugin.getUrlPluginRadio(System.String,System.Int32,System.Int32)">
+            <summary>
+            Obtient l'URL du plugin "Radio" de Deezer qui présente la radio de l'artiste.
+            Largeur et Hauteur du widget sont paramétrables avec cette méthode
+            </summary>
+            <param name="idArtist">ID de l'artiste recherché</param>
+            <param name="width">Largeur d'affichage du plugin en pixels</param>
+            <param name="height">Hauteur d'affichage du plugin en pixels</param>
+            <returns>URL pour obtenir le plugin de la radio de l'artiste recherché</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerPlugin.getUrlPluginRadio(System.String)">
+            <summary>
+            Obtient l'URL du plugin "Radio" de Deezer qui présente la radio de l'artiste.
+            Largeur et Hauteur du widget sont paramétrables avec cette méthode
+            </summary>
+            <param name="idArtist">ID de l'artiste recherché</param>
+            <param name="width">Largeur d'affichage du plugin en pixels</param>
+            <param name="height">Hauteur d'affichage du plugin en pixels</param>
+            <returns>URL pour obtenir le plugin de la radio de l'artiste recherché</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerPlugin.getUrlPluginTrack(System.String)">
+            <summary>
+            Obtient l'URL du plugin de Deezer qui permet d'écouter le titre dont on connait l'id.      
+            </summary>
+            <param name="idTrack">ID du titre à écouter</param>
+            <returns>URL pour obtenir le plugin du titre recherché</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerPlugin.getUrlPluginTrack(System.String,System.Int32,System.Int32)">
+            <summary>
+            Obtient l'URL du plugin de Deezer qui permet d'écouter le titre dont on connait l'id.      
+            </summary>
+            <param name="idTrack">ID du titre à écouter</param>
+            <param name="width">Largeur d'affichage du plugin en pixels</param>
+            <param name="height">Hauteur d'affichage du plugin en pixels</param>
+            <returns>URL pour obtenir le plugin du titre recherché</returns>
+        </member>
+        <member name="F:Btssio.Deezer.DeezerApi.modeLocalTaupe">
+            <summary>
+            Obtient ou défini le mode local (discographie de la recherche "taupe" seulement)
+            A placer à true qu'en cas de connexion Deezer instable.
+            </summary>
+        </member>
+        <member name="F:Btssio.Deezer.DeezerApi.discoComplete">
+            <summary>
+            Obtient ou défini le mode complet de la dicographie
+            Positionnée à true, toute la discographie sera retournée
+            Par défaut (false), seuls les 10 premiers albums de l'artiste sont retournés 
+            </summary>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getAllArtistsByName(System.String)">
+            <summary>
+            Retourne une liste d'artistes recherchés par un nom.
+            La discographie n'est pas retournée. Pour cela, utilisez la méthode appropriée une fois l'artiste voulu identifié...
+            </summary>
+            <param name="name">Nom objet de la recherche.</param>
+            <returns>Liste des artistes dont le nom contient le nom recherché.
+            Liste vide (Count = 0) si aucun artiste n'est trouvé.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getFirstArtistByName(System.String)">
+            <summary>
+            Retourne le premier artiste trouvé dont le nom est reçu en paramètre.
+            </summary>
+            <param name="name">Nom de l'artiste recherché.</param>
+            <returns>Artiste trouvé, null si l'artiste n'a pu être obtenu.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getDetailsArtistById(System.String)">
+            <summary>
+            Retourne toutes les informations connues de l'artiste dont l'identifiant est reçu en paramètre.
+            (ces informations ainsi que sa dicographie complète : tous les morceaux de tous ses albums...)
+            </summary>
+            <param name="idArtist">Identifiant de l'artiste.</param>
+            <returns>Artiste demandé.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getRelatedArtists(Btssio.Musique.Artist)">
+            <summary>
+            Retourne la liste des artistes liés à l'artiste reçu en paramètre.
+            </summary>
+            <param name="theArtist">Artiste concerné.</param>
+            <returns>Liste des artistes liés à l'artiste.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getAllAlbumsByName(System.String)">
+            <summary>
+            Retourne une liste d'albums recherchés par un nom.
+            </summary>
+            <param name="name">Nom objet de la recherche.</param>
+            <returns>Liste des albums dont le nom contient le nom recherché.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getDetailsAlbumById(System.String)">
+            <summary>
+            Retourne l'album dont l'identifiant est reçu en paramètre.
+            </summary>
+            <param name="idAlbum">Identifiant de l'album.</param>
+            <returns>Album demandé.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getAllAlbumsByArtist(Btssio.Musique.Artist)">
+            <summary>
+            Retourne la liste des albums de l'artiste reçu en paramètre.
+            </summary>
+            <param name="theArtist">Artiste concerné.</param>
+            <returns>Liste des albums de l'artiste.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getAllTracksByName(System.String)">
+            <summary>
+            Retourne une liste de morceaux recherchés par un nom.
+            </summary>
+            <param name="name">Nom objet de la recherche.</param>
+            <returns>Liste des morceaux dont le nom contient le nom recherché.</returns>
+        </member>
+        <member name="M:Btssio.Deezer.DeezerApi.getAllTracksByAlbum(Btssio.Musique.Album)">
+            <summary>
+            Retourne la liste des morceaux de l'album reçu en paramètre.
+            </summary>
+            <param name="theAlbum">Album concerné.</param>
+            <returns>Liste des morceaux de l'album.</returns>
+        </member>
+        <member name="T:Btssio.Deezer.DeezerObjects">
+            <summary>
+            Classe exposant un ensemble de noms de champs contenus dans les fichiers XML fournis par Deezer.
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.album">
+            <summary>
+            album
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.artist">
+            <summary>
+            artiste
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.cover">
+            <summary>
+            url de pochette
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.data">
+            <summary>
+            data
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.id">
+            <summary>
+            identifiant
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.name">
+            <summary>
+            nom
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.picture">
+            <summary>
+            url de photo
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.preview">
+            <summary>
+            extrait du morceau
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.release_date">
+            <summary>
+            date de sortie
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.title">
+            <summary>
+            titre
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.track">
+            <summary>
+            morceau
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.link">
+            <summary>
+            lien
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.nb_album">
+            <summary>
+            nombre d'albums
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.nb_fan">
+            <summary>
+            nombre de fans
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.duration">
+            <summary>
+            durée
+            </summary>
+        </member>
+        <member name="P:Btssio.Deezer.DeezerObjects.label">
+            <summary>
+            label
+            </summary>
+        </member>
+        <member name="T:Btssio.Tools.NetManager">
+            <summary>
+            Classe d'utilitaires de gestion réseau
+            </summary>
+        </member>
+        <member name="M:Btssio.Tools.NetManager.isConnected">
+            <summary>
+            Indique si l'ordinateur est connecté à Internet ou pas
+            </summary>
+            <returns>Vrai si l'ordinateur est connecté, faux sinon</returns>
+        </member>
+    </members>
+</doc>

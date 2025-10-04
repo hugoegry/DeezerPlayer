@@ -1,0 +1,52 @@
+13404069232978994
+SQLITE_CORRUPT, db size 43021
+integrity_check 0 ms, 21 records:
+*** in database main ***
+Tree 1 page 13: btreeInitPage() returns error code 11
+Tree 1 page 12: btreeInitPage() returns error code 11
+Page 2: never used
+Page 3: never used
+Page 4: never used
+Page 5: never used
+Page 6: never used
+Page 7: never used
+Page 8: never used
+Page 9: never used
+Page 10: never used
+Page 11: never used
+Page 14: never used
+Page 15: never used
+Page 16: never used
+Page 17: never used
+Page 18: never used
+Page 19: never used
+Page 20: never used
+Has valid header: No
+Has valid schema: No
+
+13404069280398484
+SQLITE_CORRUPT, db size 43021
+integrity_check 0 ms, 21 records:
+*** in database main ***
+Tree 1 page 13: btreeInitPage() returns error code 11
+Tree 1 page 12: btreeInitPage() returns error code 11
+Page 2: never used
+Page 3: never used
+Page 4: never used
+Page 5: never used
+Page 6: never used
+Page 7: never used
+Page 8: never used
+Page 9: never used
+Page 10: never used
+Page 11: never used
+Page 14: never used
+Page 15: never used
+Page 16: never used
+Page 17: never used
+Page 18: never used
+Page 19: never used
+Page 20: never used
+Has valid header: No
+Has valid schema: No
+
