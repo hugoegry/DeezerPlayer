@@ -137,7 +137,7 @@
             this.lblAuteurName.Name = "lblAuteurName";
             this.lblAuteurName.Size = new System.Drawing.Size(69, 13);
             this.lblAuteurName.TabIndex = 5;
-            this.lblAuteurName.Text = "LOPEZ Erine";
+            this.lblAuteurName.Text = "Egry Hugo";
             // 
             // lblDateMaj
             // 
