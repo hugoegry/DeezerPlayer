@@ -53,11 +53,11 @@
 <!--
 [
   {
-    "name": "Python HangGame mini games",
-    "desc": "A simple and effective hangman game in Python. Guess the word before the hangman is complete, with error handling, progressive display and guaranteed fun !",
+    "name": "C# desktop music player",
+    "desc": "A modern C# desktop music player integrating the Deezer API, designed for seamless streaming, playlist management, and real-time audio playback with a clean, intuitive interface.",
     "date": "2025-09-18T15:42:00Z",
     "link": {
-      "codeReview": "https://github.com/hugoegry/py-snippets-collection-WP/tree/main/part09_hangmanChallengeEvolution/hangGameEvolution",
+      "codeReview": "https://github.com/hugoegry/DeezerPlayer",
       "show": null
     },
     "preview": {
@@ -67,21 +67,6 @@
       },
       "p2": {
         "name": "hangGameImg1",
-        "ex": "jpg"
-      }
-    }
-  },
-  {
-    "name": "Python Language Detector",
-    "desc": "A smart Python script that automatically identifies the language of a text.",
-    "date": "2025-09-12T15:42:00Z",
-    "link": {
-      "codeReview": "https://github.com/hugoegry/py-snippets-collection-WP/blob/main/part03/exo3.5.py",
-      "show": null
-    },
-    "preview": {
-      "p1": {
-        "name": "miniatureLanguageDetectorPython",
         "ex": "jpg"
       }
     }
