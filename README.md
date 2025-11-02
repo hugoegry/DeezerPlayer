@@ -47,7 +47,7 @@
 ---
 
 
-<!--
+<!--HEG_GIT_HUB_API
 [
   {
     "name": "C# desktop music player",
