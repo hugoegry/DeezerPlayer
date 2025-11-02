@@ -46,3 +46,28 @@
 3. Restore NuGet packages.
 
 4. Build and run the application.
+
+
+<!--
+[
+  {
+    "name": "Python HangGame mini games",
+    "desc": "A modern C# desktop music player integrating the Deezer API, designed for seamless streaming, playlist management, and real-time audio playback with a clean, intuitive interface.",
+    "date": "2023-10-15T17:30:00Z",
+    "link": {
+      "codeReview": "https://github.com/hugoegry/DeezerPlayer",
+      "show": null
+    },
+    "preview": {
+      "p1": {
+        "name": "miniatureHangManGamePython",
+        "ex": "jpg"
+      },
+      "p2": {
+        "name": "hangGameImg1",
+        "ex": "jpg"
+      }
+    }
+  }
+]
+-->
