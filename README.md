@@ -51,7 +51,7 @@
 <!--
 [
   {
-    "name": "Python HangGame mini games",
+    "name": "C# desktop music player ",
     "desc": "A modern C# desktop music player integrating the Deezer API, designed for seamless streaming, playlist management, and real-time audio playback with a clean, intuitive interface.",
     "date": "2023-10-15T17:30:00Z",
     "link": {
