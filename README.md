@@ -59,11 +59,7 @@
     },
     "preview": {
       "p1": {
-        "name": "miniatureHangManGamePython",
-        "ex": "jpg"
-      },
-      "p2": {
-        "name": "hangGameImg1",
+        "name": "miniatureDeezerApp",
         "ex": "jpg"
       }
     }
